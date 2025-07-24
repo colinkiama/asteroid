@@ -3,26 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#7239b3">
     <title>Document</title>
 
     {% block head %}
-    {% endblock head %}
+    {% endblock %}
 </head>
 <body>
     <a id="bypass-block" href="#main-content">Skip to main content</a>
 
-    <header>
-        {% block header %}
-            <h1>{{ page.title }}</h1>
-            <p>{{ page.description }}</p>
-        {% endblock header %}
-    </header>
+    {% block header %}{% endblock header %}
 
     <div class="container">
-        <main id="main-content">
-            {% block main_content %} {% endblock %}
-        </main>
+        {% block main_body_content %}{% endblock %}
     </div>
     {% block body_end %} {% endblock %}
 </body>
