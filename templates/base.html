@@ -17,6 +17,12 @@
 
     <div class="container">
         {% block main_body_content %}{% endblock %}
+        <aside class="table-of-contents">
+            <span>Contents</span>
+            {% block table_of_contents %}
+                {# Fill sidebar with table of contents for the page #}
+            {% endblock %}
+        </aside>
     </div>
     {% block body_end %} {% endblock %}
 </body>
