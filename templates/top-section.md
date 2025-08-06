@@ -6,7 +6,6 @@
 {% block header %}
 <header>
     <h1>{{ section.title }}</h1>
-    <p>{{ section.description }}</p>
 </header>
 {% endblock %}
 
