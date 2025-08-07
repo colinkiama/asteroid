@@ -3,7 +3,7 @@ title = "Vala Documentation"
 description = "This is the index page!"
 +++
 
-# Introduction
+## Introduction
 
 Vala is a programming language using modern high level abstractions
 without imposing additional runtime requirements and without using a
@@ -15,7 +15,7 @@ uses where native binaries are required.
 
 [Learn more about Vala](about)
 
-# Sections
+## Sections
 
 -   [Installation Guide](installation-guide)
 -   [Tutorials](tutorials)
@@ -24,7 +24,7 @@ uses where native binaries are required.
 -   [Developer Guides](developer-guides)
 -   [FAQ](faq)
 
-# External Resources
+## External Resources
 
 -   [API References (valadoc.org)](https://valadoc.org)
 -   [Reference
@@ -38,11 +38,11 @@ uses where native binaries are required.
 -   [Vala Project GNOME Wiki
     (Deprecated)](https://wiki.gnome.org/Projects/Vala)
 
-# Community
+## Community
 
 -   [Vala Community Links](https://vala.dev/#community)
 
-# Contribute
+## Contribute
 
 -   [View the source code of this
     documentation](https://github.com/vala-lang/vala-docs)

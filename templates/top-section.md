@@ -19,27 +19,21 @@
 <main id="main-content">
     {{ section.content|safe }}
 
-        <ul>
-        {% for page in section.page %}
+    <ul>
+        {% for sub in section.subsections %}
             <li>
-                <a href="{{ page.permalink }}">{{ page.title }}</a>
+                <a href="{{ sub.permalink }}">{{ sub.title }}</a>
                 <ul>
-                    {% for page_page in sub.pages %}
+                    {% for sub_page in sub.pages %}
                         <li>
                             <a href="{{ sub_page.permalink }}">{{ sub_page.title }}</a>
-                            {% if sub_page.toc %}
-                                {% for h1 in sub_page.toc %}
-                                    {% for h2 in h1.children %}
-                                        <a href="{{ h2.permalink }}">{{ h2.title }}</a>
-                                    {% endfor %}
-                                {% endfor %}
-                            {% endif %}
                         </li>
                     {% endfor %}
                 </ul>
             </li>
         {% endfor %}
     </ul>
+
 </main>
 
 {% endblock %}
