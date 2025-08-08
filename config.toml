@@ -12,5 +12,16 @@ build_search_index = true
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
+[translations]
+admonition_attention = "Attention"
+admonition_danger = "Danger"
+admonition_error = "Error"
+admonition_hint = "Hint"
+admonition_note = "Note"
+admonition_seealso = "See Also"
+admonition_tip = "Tip"
+admonition_todo = "TODO"
+admonition_warning = "Warning"
+
 [extra]
 # Put all your custom variables here

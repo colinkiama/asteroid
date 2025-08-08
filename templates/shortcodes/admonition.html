@@ -1,0 +1,7 @@
+{% set admonition_translation_key = "admonition_" ~ type %}
+<div class="admonition {{type}}" >
+    <p class="admonition-title">
+        {{ trans(key=admonition_translation_key) }}
+    </p>
+    {{ body|markdown|safe }}
+</div>
